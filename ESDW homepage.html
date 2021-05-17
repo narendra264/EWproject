@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Password Based Door Lock System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <a href="ESDW homepage.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <h1 class="logo me-auto"><a href="ESDW homepage.html">ESDW PROJECT</a></h1>
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>PASSWORD BASED DOOR LOCK SYSTEM</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+          <h2>About our Project</h2>
+            <p>
+              Password Based Door Lock System using 8051 Microcontroller is a simple project where a secure password will act as a door unlocking system. Traditional lock systems using mechanical lock and key mechanism are being replaced by new advanced techniques of locking system. These techniques are an integration of mechanical and electronic devices and are highly intelligent. One of the prominent features of these innovative lock systems is their simplicity and high efficiency.<br>
+              Such an automatic lock system consists of electronic control assembly, which controls the output load through a password. This output load can be a motor or a lamp or any other mechanical/electrical load.<br>
+              Here, we developed an electronic code lock system using 8051 microcontroller (a Password based Door Lock System using 8051 Microcontroller), which provides control to the actuating the load. It is a simple embedded system with input from the keyboard and the output being actuated accordingly.<br>
+              This system demonstrates a Password based Door Lock System using 8051 Microcontroller, wherein once the correct code or password is entered, the door is opened and the concerned person is allowed access to the secured area. Again, if another person arrives, it will ask to enter the password. If the password is wrong, then door would remain closed, denying access to the person.
+            </p>
+          <h2>Hardware Required</h2>
+            <ul>
+              <li><i class="ri-check-double-line"></i>8051 Microcontroller</li>
+              <li><i class="ri-check-double-line"></i>8051 Development Board</li>
+              <li><i class="ri-check-double-line"></i>8051 Programmer</li>
+              <li><i class="ri-check-double-line"></i>4×4 Matrix Keypad</li>
+              <li><i class="ri-check-double-line"></i>16×2 LCD</li>
+              <li><i class="ri-check-double-line"></i>L293D Motor Driver Board</li>
+              <li><i class="ri-check-double-line"></i>DC Motor</li>
+              <li><i class="ri-check-double-line"></i>10KΩ Potentiometer</li>
+              <li><i class="ri-check-double-line"></i>Connecting wires</li>
+              <li><i class="ri-check-double-line"></i>Power Supply</li>
+              <li><i class="ri-check-double-line"></i>If 8051 Development Board is not used, then the following components are needed
+                  <ul>
+                    <li><i class="ri-check-double-line"></i>11.0592 MHz Quartz Crystal</li>
+                    <li><i class="ri-check-double-line"></i>2 x 33pF Ceramic Capacitors</li>
+                    <li><i class="ri-check-double-line"></i>2 x 10 KΩ Resistor (1/4 Watt)</li>
+                    <li><i class="ri-check-double-line"></i>10 µF Capacitor (Polarized)</li>
+                    <li><i class="ri-check-double-line"></i>Push Button</li>
+                    <li><i class="ri-check-double-line"></i>2 x 1 KΩ Resistors (for pull up)</li>
+                 </ul>
+                 </li>
+            </ul>
+            <h2>Software Requirements</h2>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Keil µVision IDE</li>
+              <li><i class="ri-check-double-line"></i>Willar Programmer</li>
+              <li><i class="ri-check-double-line"></i>Proteus (for circuit diagram and simulation)</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h2>Design of Password based Door Lock System</h2>
+            <p>
+              Password based door lock system using 8051 microcontroller circuit design uses five major components – a Microcontroller, an L293D Motor Driver, a DC Motor, a 4×4 Matrix Keypad and a 16×2 LCD. Here, an AT89C52 Microcontroller is used and it is an 8-bit controller. This controller requires a supply voltage of +5V DC. In order to provide regulated 5V DC voltage to the controller we need to use 7805 power supply circuit. We can use 9V DC battery or 12V, 1A adaptor as a power source.  <br>
+              <strong>Reset Circuit Design:</strong>The reset pin of the microcontroller is kept active till the power supply is in the specified range and a minimum oscillation level is maintained.  In other words to ensure the supply voltage does not falls below the threshold level of 1.2V and the reset pulse width is greater than 100ms (recommended for 89C52),  we need to select the values of resistor and capacitor such that RC >=100ms.  Hence, we selected a 10KΩ resistor and a 10µF electrolytic capacitor.<br> 
+              <strong>Oscillator Circuit Design:</strong> An 11.0592MHz crystal oscillator is used to provide external clock signal to the microcontroller. To ensure smooth operation, we need to connect two ceramic capacitors in the range of 30pF to 40pF. This crystal oscillator is connected between pin 18 and 19 of the microcontroller. Here, we used two 33pF capacitors.<br>  
+              <strong>Interfacing LCD, Keypad and Motor Driver:</strong> First, a 10KΩ Potentiometer is connected to the LCD Display’s Contrast Adjust Pin (Pin 3). RS, RW and E of LCD are connected to P3.0, GND and P3.2 pins respectively. The eight data lines of the LCD are connected to PORT1.<br>
+The four ROW pins of the Keypad are connected to P2.0 to P2.3 and the four COLUMN pins of the Keypad are connected to P2.4 to P2.7 pins respectively. The IN1 and IN2 of (1A and 2A) of the L293D Motor Driver are connected to PORT0 pins P0.0 and P0.1. Motor is connected between OUT1 and OUT2 (1Y and 2Y) pins of L293D.<br>
+<strong>Compilation of Microcontroller Code:</strong> Once the circuit is designed and drawn on a piece of paper, the next step is to write and compile the code. Here, we used the Keil µVision software to write the program in C language.<br>
+Prior to writing the code, general steps needs to be followed like creating a new project and selecting the target device or the required microcontroller. Once the code is written, we need to save it with .c extension and then add it to the source file group under the target folder.  The code is then compiled by pressing F7 key.<br>
+Once the code is compiled, a hex file is created.<br>In the next step, we use Proteus software to draw the circuit. The code is dumped into the microcontroller using an external programmer and Willar Software.<br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3><strong>CIRCUIT DIAGRAM</strong></h3>
+              <h3>Working</h3>
+            </div>
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>Step 1</span><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Once the circuit is powered ON, microcontroller sends commands to the LCD to display “enter password” on LCD.  Now we need to enter the password using the keypad. Once password is entered, it displays 5 stars on LCD to indicate that controller read password successfully.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>Step 2</span><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Now the controller compares the entered password with predefined password. If the password is matched, then the microcontroller makes P0.0 HIGH and P0.1 LOW, so the motor driver gets the input signals for forward motion of the motor.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>Step 3</span><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      As a result, the Door Motor rotates in forward direction to open the door. After a delay of 10seconds, the microcontroller makes P0.0 LOW and P0.1 HIGH, so the motor driver gets the input signals for reverse motion. As a result, the Door motor rotates in reverse direction to close the door.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>Step 4</span><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      If the password is not matched, then microcontroller maintains both P0.0 and P0.1 LOW. Hence, the door motor is stationary so that door remains closed.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>Code</span><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <pre>
+                      RS EQU P2.7
+                      RW EQU P2.6
+                      E  EQU P2.5
+                      SEL EQU 41H
+                      
+                      
+                      
+                      ORG 000H 
+                      CLR P2.0
+                      MOV TMOD,#00100001B
+                      MOV TH1,#253D
+                      MOV SCON,#50H
+                      SETB TR1
+                      ACALL LCD_INIT
+                      MOV DPTR,#TEXT1
+                      ACALL LCD_OUT
+                      ACALL LINE2
+                      MOV DPTR,#TEXT2
+                      ACALL LCD_OUT
+                      
+                      
+                      
+                      MAIN:ACALL LCD_INIT
+                           MOV DPTR,#TEXT1
+                           ACALL LCD_OUT
+                           ACALL LINE2
+                           MOV DPTR,#TEXT2
+                           CLR P2.0
+                           ACALL LCD_OUT
+                           ACALL DELAY1
+                           ACALL DELAY1
+                           ACALL READ_KEYPRESS
+                           ACALL LINE1 
+                           MOV DPTR,#CHKMSG
+                           ACALL LCD_OUT
+                           ACALL DELAY1
+                           ACALL CHECK_PASSWORD      
+                           SJMP MAIN
+                      
+                      LCD_INIT: MOV DPTR,#INIT_COMMANDS
+                                SETB SEL
+                                ACALL LCD_OUT
+                                CLR SEL
+                                RET      
+                      
+                      LCD_OUT:  CLR A
+                                 MOVC A,@A+DPTR
+                                 JZ EXIT
+                                 INC DPTR
+                                 JB SEL,CMD
+                                 ACALL DATA_WRITE
+                                 SJMP LCD_OUT
+                      CMD:      ACALL CMD_WRITE 
+                                 SJMP LCD_OUT
+                      EXIT:	   RET          
+                      
+                      LINE2:MOV A,#0C0H 
+                          ACALL CMD_WRITE
+                          RET   
+                          
+                      LINE1: MOV A,#80H    
+                      ACALL CMD_WRITE
+                      RET
+                      
+                      CLRSCR: MOV A,#01H
+                      ACALL CMD_WRITE
+                      RET
+                      
+                      CMD_WRITE: MOV P0,A
+                          CLR RS
+                          CLR RW
+                          SETB E
+                          CLR E
+                          ACALL DELAY
+                          RET
+                      
+                      DATA_WRITE:MOV P0,A
+                          SETB RS
+                          CLR RW
+                          SETB E
+                          CLR E
+                          ACALL DELAY
+                          RET
+                      
+                      DELAY: CLR E
+                          CLR RS
+                          SETB RW
+                          MOV P0,#0FFh
+                          SETB E
+                          MOV A,P0
+                          JB ACC.7,DELAY
+                          CLR E
+                          CLR RW
+                          RET
+                          
+                      DELAY1:MOV R3,#46D
+                      BACK:  MOV TH0,#00000000B   
+                             MOV TL0,#00000000B   
+                             SETB TR0             
+                      HERE1: JNB TF0,HERE1         
+                             CLR TR0             
+                             CLR TF0             
+                             DJNZ R3,BACK
+                             RET
+                             
+                      DELAY2: MOV R3,#250D
+                      BACK2:   MOV TH0,#0FCH 
+                              MOV TL0,#018H 
+                              SETB TR0 
+                      HERE2:  JNB TF0,HERE2 
+                              CLR TR0 
+                              CLR TF0 
+                              DJNZ R3,BACK2
+                              RET       
+                      
+                      
+                      READ_KEYPRESS: ACALL CLRSCR
+                      ACALL LINE1
+                      MOV DPTR,#IPMSG
+                      ACALL LCD_OUT
+                      ACALL LINE2
+                      MOV R0,#5D
+                      MOV R1,#160D
+                      ROTATE:ACALL KEY_SCAN
+                      MOV @R1,A
+                      ACALL DATA_WRITE
+                      ACALL DELAY2
+                      INC R1
+                      DJNZ R0,ROTATE
+                      RET
+                      
+                      
+                      
+                      CHECK_PASSWORD:MOV R0,#5D
+                      MOV R1,#160D
+                      MOV DPTR,#PASSW 
+                      RPT:CLR A
+                      MOVC A,@A+DPTR
+                      XRL A,@R1
+                      JNZ FAIL
+                      INC R1
+                      INC DPTR
+                      DJNZ R0,RPT
+                      ACALL CLRSCR
+                      ACALL LINE1
+                      MOV DPTR,#TEXT_S1
+                      ACALL LCD_OUT
+                      ACALL LINE2
+                      ACALL DELAY1
+                      SETB P2.0
+                      MOV DPTR,#TEXT_S2
+                      ACALL LCD_OUT
+                      ACALL DELAY1
+                      SJMP GOBACK
+                      FAIL:ACALL CLRSCR 
+                      ACALL LINE1
+                      MOV DPTR,#TEXT_F1
+                      ACALL LCD_OUT
+                      ACALL DELAY1
+                      ACALL LINE2
+                      MOV DPTR,#TEXT_F2
+                      ACALL LCD_OUT
+                      ACALL DELAY1
+                      GOBACK:RET
+                      
+                      
+                      
+                      KEY_SCAN:MOV P3,#11111111B 
+                      CLR P3.0 
+                      JB P3.4, NEXT1 
+                      MOV A,#49D
+                      RET
+                      
+                      NEXT1:JB P3.5,NEXT2
+                      MOV A,#50D
+                      
+                      RET
+                      NEXT2: JB P3.6,NEXT3
+                      MOV A,#51D
+                      
+                      RET
+                      NEXT3: JB P3.7,NEXT4
+                      MOV A,#65D
+                      
+                      RET
+                      NEXT4:SETB P3.0
+                      CLR P3.1 
+                      JB P3.4, NEXT5 
+                      MOV A,#52D
+                      
+                      RET
+                      NEXT5:JB P3.5,NEXT6
+                      MOV A,#53D
+                      
+                      RET
+                      NEXT6: JB P3.6,NEXT7
+                      MOV A,#54D
+                      RET
+                      NEXT7: JB P3.7,NEXT8
+                      MOV A,#66D
+                      
+                      RET
+                      NEXT8:SETB P3.1
+                      CLR P3.2
+                      JB P3.4, NEXT9 
+                      MOV A,#55D
+                      
+                      RET
+                      NEXT9:JB P3.5,NEXT10
+                      MOV A,#56D
+                      
+                      RET
+                      NEXT10: JB P3.6,NEXT11
+                      MOV A,#57D
+                      
+                      RET
+                      NEXT11: JB P3.7,NEXT12
+                      MOV A,#67D
+                      
+                      RET
+                      NEXT12:SETB P3.2
+                      CLR P3.3
+                      JB P3.4, NEXT13 
+                      MOV A,#42D
+                      
+                      RET
+                      NEXT13:JB P3.5,NEXT14
+                      MOV A,#48D
+                      
+                      RET
+                      NEXT14: JB P3.6,NEXT15
+                      MOV A,#35D
+                      
+                      RET
+                      NEXT15: JB P3.7,NEXT16
+                      MOV A,#68D
+                      RET
+                      NEXT16:LJMP KEY_SCAN
+                      
+                      
+                      
+                      
+                      INIT_COMMANDS:  DB 0CH,01H,06H,80H,3CH,0    
+                      
+                      TEXT1: DB "PASSWORD BASED",0 
+                      TEXT2: DB "SECURITY SYSTEM",0 
+                      IPMSG: DB "INPUT 5 DIGITS",0
+                      CHKMSG: DB "CHECKING PASSWORD",0
+                      TEXT_S1: DB "ACCESS - GRANTED",0
+                      TEXT_S2: DB "DOOR OPENED",0
+                      TEXT_F1: DB "WRONG PASSWORD",0
+                      TEXT_F2: DB "ACCESS DENIED",0
+                      PASSW: DB 49D,50D,51D,52D,53D,0
+                      END
+                    </pre>
+                  </div>
+                </li>
+              </ul>
+            </div>
+                   <p><strong>Note: </strong>While giving the connections, make sure that there is no common connection between AC and DC supplies.</p>
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+       <h4><strong>Password Based Door Lock System Algorithm</strong></h4>
+       <ul>
+        <li>Initially, declare the PORT1 to LCD data pins and control pins (RS and E) to P3.0 and P3.2. Also, declare PORT2 to keypad. Also use P0.0 and P0.1 for motor driver.</li>
+        <li>Then, display the message “enter password” on LCD.</li>  
+        <li>Now read the five digit password from the user.</li>
+        <li>Compare the entered password with the stored password.</li>
+        <li>If password is correct, then make P0.0 pin HIGH and P0.1 pin LOW to open the door. During this time, display <i>“Door opening”</i> on LCD.</li>
+        <li>After some time, make P0.0 pin LOW and P0.1 pin HIGH to close the door and after this display <i>“Door closing”</i> on LCD.</li>
+        <li>If the password is wrong, then display <i>“Wrong Password”</i> on LCD.</li>
+        <li>After some delay again ask to enter password.</li>
+       </ul> 
+
+       <h4><strong>Advantages</strong></h4>
+       <ul>
+         <li>This project provides security</li>
+         <li>Power consumption is less</li>
+         <li>Used commonly available components</li>
+         <li>Project is simple and easy</li>
+       </ul> 
+
+       <h4><strong>Applications</strong></h4>
+       <ul>
+        <li>This simple circuit can be used at residential places to ensure better safety.</li>
+        <li>It can be used at organizations to ensure authorized access to highly secured places.</li>  
+        <li>With a slight modification this Project can be used to control the switching of loads through password.</li>
+       </ul> 
+       <h4><strong>Limitations</strong></h4>
+       <ul>
+        <li>It is a low range circuit, i.e. it is not possible to operate the circuit remotely.</li>
+        <li>If you forget the password it is not possible to open the door.</li>  
+       </ul> 
+      </div>
+     </section><!-- End Why Us Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <br><br>
+                <h4>Narendra</h4>
+                <div class="social">
+                  <a href="http://wa.me/+918185816375"><i class="ri-whatsapp-fill"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100019323609877"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://www.instagram.com/naren_264/"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.linkedin.com/in/puvvala-narendra-a970551a0/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <br><br>
+                <h4>Pravallika</h4>
+                <div class="social">
+                  <a href="http://wa.me/"><i class="ri-whatsapp-fill"></i></a>
+                  <a href="https://media.tenor.com/images/211735c953b1b24cc4ed4200d67d74d4/tenor.gif"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://pa1.narvii.com/6533/988d3cd767f0ab5795edaca5369df1ee4351775a_hq.gif"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://media.tenor.com/images/211735c953b1b24cc4ed4200d67d74d4/tenor.gif"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <br><br>
+                <h4>Lakshmi Durga</h4>
+                <div class="social">
+                  <a href="http://wa.me/"><i class="ri-whatsapp-fill"></i></a>
+                  <a href="https://media.tenor.com/images/211735c953b1b24cc4ed4200d67d74d4/tenor.gif"><i class="ri-facebook-fill"></i></a>
+                  <a href="https://pa1.narvii.com/6533/988d3cd767f0ab5795edaca5369df1ee4351775a_hq.gif"><i class="ri-instagram-fill"></i></a>
+                  <a href="https://media.tenor.com/images/211735c953b1b24cc4ed4200d67d74d4/tenor.gif"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section><!-- End Team Section -->
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+         </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>K L Deemed to be University,
+Green Fields, Vaddeswaram, 
+Guntur District, A.P., INDIA. 
+Pincode : 522 502.</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:puvvalanarendra867@gmail.com">puvvalanarendra867@gmail.com</a></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p><a href="tel:+918185816375">+918185816375</a></p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="mailto:puvvalanarendra867@gmail.com" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Any suggestions</h4>
+            <p>your words are most valuable to us!</p>
+            <form action="mailto:puvvalanarendra867@gmail.com" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Visit us at Social Networks</h4>
+            <div class="social-links mt-3">
+              <a href="http://wa.me/+918185816375" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100019323609877" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/naren_264/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/puvvala-narendra-a970551a0/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright 2021 <strong><span>Narendra Puvvala</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="">NAren</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
